@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+  </head>
+
+  <body>
+    <h2>Skill Set</h2>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="progress red">
+            <h3 class="progress-title">HTML5</h3>
+            <div class="progress-bar">
+              <div class="progress-value" style="width: 80%;">80%</div>
+            </div>
+          </div>
+
+          <div class="progress Garnet">
+            <h3 class="progress-title">CSS3</h3>
+            <div class="progress-bar">
+              <div class="progress-value" style="width: 75%;">75%</div>
+            </div>
+          </div>
+          <div class="progress Umber">
+            <h3 class="progress-title">Java</h3>
+            <div class="progress-bar">
+              <div class="progress-value" style="width: 70%;">70%</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="progress Russet">
+            <h3 class="progress-title">Java Script</h3>
+            <div class="progress-bar">
+              <div class="progress-value" style="width: 50%;">50%</div>
+            </div>
+          </div>
+          <div class="progress Camel">
+            <h3 class="progress-title">Python</h3>
+            <div class="progress-bar">
+              <div class="progress-value" style="width: 80%;">80%</div>
+            </div>
+          </div>
+          <div class="progress Almond">
+            <h3 class="progress-title">Angular</h3>
+            <div class="progress-bar">
+              <div class="progress-value" style="width: 45%;">45%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+
+    h2{
+      text-align: center;
+    }
+    .container{
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+    }
+    .row{
+      justify-content: center;
+    }
+    .demo{ background: #dad9d4; }
+    .progress{
+        height: 40px;
+        background: #fff;
+        border-radius: 100px;
+        box-shadow: none;
+        margin-top: 40px;
+        position: relative;
+    }
+    .progress .progress-title{
+        width: 20%;
+        height: 100%;
+        background: #fff;
+        border-radius: 100px 0 0 100px;
+        float: left;
+        margin: 0;
+        font-size: 15px;
+        color: #000;
+        line-height: 40px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .progress .progress-title:after{
+        content: "";
+        border-left: 10px solid #fff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        z-index: 1;
+    }
+    .progress .progress-bar{
+        width: 80%;
+        background: #fff;
+        box-shadow: none;
+        position: relative;
+    }
+    .progress .progress-value{
+        height: 100%;
+        border-radius: 0 100px 100px 0;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 40px;
+        color: #fff;
+        animation: animate-positive 2s;
+    }
+    .progress.red .progress-value{ background: 	#8B0000; }
+    .progress.Garnet .progress-value{ background: #9A2A2A; }
+    .progress.Russet .progress-value{ background: 	#80461B; }
+    .progress.Umber .progress-value{ background: #6E260E; }
+    .progress.Camel .progress-value{ background: 	#C19A6B; }
+    .progress.Almond .progress-value{ background: #D2B48C; }
+    @keyframes animate-positive{
+        0%{ width: 0; }
+    }
+    @media only screen and (max-width: 480px){
+        .progress .progress-title{
+            font-size: 12px;
+            letter-spacing: 0;
+        }
+    }
+  </style>
+</html>
