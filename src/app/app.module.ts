@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'education', component: EducationComponent },
   { path: 'reference', component: ReferenceComponent },
-  { path: '**', component: NotFoundPageComponent },
+  { path: 'page', component: NotFoundPageComponent },
 ];
 
 @NgModule({
