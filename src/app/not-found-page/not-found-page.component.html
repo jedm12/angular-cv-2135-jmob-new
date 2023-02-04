@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+  </head>
+  <body>
+    <!-- ngIf directives -->
+
+    <ng-template [ngIf]="showElement">
+      <p id="page" [style.color]="myColor">Page Not Found!</p>
+    </ng-template>
+
+    <!-- ngFor directives -->
+
+    <ul>
+      <li *ngFor="let item of num">
+        {{ item }}
+      </li>
+    </ul>
+  </body>
+  <style>
+    p{
+      font-size: 50px;
+    }
+  </style>
+</html>

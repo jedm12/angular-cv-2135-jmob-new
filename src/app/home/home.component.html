@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+  </head>
+  <body>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0"
+    >
+      <div class="container-fluid" id="container-fluid" name="scrollHeading1">
+        <img
+          src="https://stackblitz.com/files/angular-cv-2135-jmob/github/jedm12/angular-cv-2135-jmob/main/picture/profile.png"
+          class="img-fluid"
+          alt="image"
+          id="header"
+        />
+      </div>
+      <app-about></app-about>
+      <app-skills></app-skills>
+      <app-education></app-education>
+      <app-reference></app-reference>
+    </div>
+
+    <div class="container-fluid" id="container-fluid"></div>
+  </body>
+  <style>
+        a{
+          padding-left: 50px;
+          color: #722F37;
+        }
+        img#header{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        div#container-fluid{
+          background-image: url(https://stackblitz.com/files/angular-cv-2135-jmob/github/jedm12/angular-cv-2135-jmob/main/picture/1.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        }
+
+        .theme-color {
+            color: #A0522D;
+        }
+        .dark-color {
+            color: 	#800000	;
+        }
+    }
+  </style>
+</html>
