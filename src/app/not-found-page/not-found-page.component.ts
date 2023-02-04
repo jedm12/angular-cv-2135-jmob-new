@@ -11,6 +11,7 @@ export class NotFoundPageComponent implements OnInit {
 
   //ngIf Demo
   showElement = true;
+  appliedClass = true;
 
   //ngFor
 
